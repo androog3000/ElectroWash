@@ -46,6 +46,7 @@ a {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 1.5em;
   margin-top:-50px;
+  font-style:italic;
 }
 /*
 .heading h3 {
@@ -53,13 +54,16 @@ a {
 }*/
 .expla {
   line-height: 1.2;
+  font-size: 1.1em;
   text-align: center;
   align-content: center;
   margin: auto;
-  width:85%;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  width:87%;
 }
 .expla h4 {
-  margin:20px 100px;
+  margin:30px;
 }
 
 #bumper-div {
@@ -89,6 +93,36 @@ from {background-color: rgb(30, 126, 205);}
 to {background-color: rgb(224, 112, 64);}
 }
 
+.descriptions {
+  text-align: center;
+  width:inherit;
+  margin:2px 8px;
+}
+
+.short-description {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.expansions {
+  text-align: center;
+  width:inherit;
+  height: 90px;
+  word-wrap: break-word;
+  overflow: scroll;
+  display:none;
+  padding:8px;
+  background-color: rgb(254, 255, 207);
+  border-radius:6px;
+  border: 2px solid;
+}
+
+.expand-buttons {
+  background-color: rgb(241, 47, 105);
+  color:rgb(254, 236, 236);
+  border-radius:6px;
+}
+
 #mood-text {
   font-family: 'Trebuchet MS', sans-serif;
   color: cornsilk;
@@ -98,6 +132,7 @@ to {background-color: rgb(224, 112, 64);}
   padding:4px;
   /*border: 2px solid rgb(218, 241, 246);*/
 }
+
 
 /*Page styling non index*/
 .returnLinkDiv {
@@ -223,4 +258,5 @@ input {
 /*About Page*/
 #about-content {
   text-align: center;
+  margin-bottom:40px;
 }
