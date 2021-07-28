@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
   </head>
-  <body class="body">
+  <body class="body" onload="readMoreSynth()">
     <ul id="nav">
       <li><a href="./index.html">Electro Wash</a></li>
       <li><a href="./synthesizers.html">Synthesizers</a></li>
@@ -16,14 +15,11 @@
       <li><a href="./games.html">Games</a></li>
       <li><a href="./about.html">About</a></li>
     </ul><br><br>
-<!--<div class="returnLinkDiv">
-      <a href="./index.html" class="returnLink">Back to Main Page</a>
-    </div>-->
     <div class="heading">
       <h1>Synthesizers</h1>
-      <h3>I saw the sine..</h3>
+      <h3><em>I saw the sine</em></h3>
       <div class="expla">
-        <h4>Synthesizers can do wonders for you. They can drain your wallet, turn minutes into hours, and help convince you that a sound you've created that would remind some of a heated battle between robot warriors, is in fact, music.  They can also be wonderful tools of inspiration that can provide divinely meditative ambience or absolute house-rattling basslines</h4>
+        <h4>Synthesizers can be wonderful tools of inspiration that can provide everthing from divinely meditative ambience to absolute house-rattling basslines..</h4>
       </div>
     </div>
     <div class="content-outline">
@@ -33,30 +29,49 @@
             <source src="Video/BanChanGlimmer.mp4" type="video/mp4">
               Your browser does not support the video tag :(
           </video>
-          <p>While more of a sequencer and sampler than a traditional synthesizer, the Elektron Digitakt is an excellent tool for creativity, allowing you to import your own sounds and manipulate and layer them until you've got something truly original.  Some electronic instruments allow you seemlessly take an idea from your head and recreate it through the medium of the instrument.  The Digitakt is unlikely to be one of those because it forces you to work within its rules and confines.  However this can be extremely rewarding as you are guaranteed to end up somewhere you would not have otherwise imagined.</p>
+          <div class="descriptions">
+            <p class="short-description">All sounds stemming from a single take of the mighty Digitakt. The flying colors were added in post however.</p><hr>
+            <button id="synth-button-1" class="expand-buttons">Read more</button>
+            <p id="synth-expand-1" class="expansions"></p>
+          </div>
         </div>
         <div class="grid-video">
           <video width="384" height="288" controls class="video">
             <source src="Video/GntlWknd.mp4" type="video/mp4">
               Your browser does not support the video tag :(
           </video>
-          <p>Here we've got a classic patch of mine.  While some may call them boring waveforms, I often turn to classic sine waves and run them through a VCA with a short, plucky envelope.  In this case we have two oscillators each with a sequence controlling its pitch.  These two melodies then run through a delay unit which adds a nice rhythmic effect as well as stereo ambience.</p>
+          <div class="descriptions">
+            <p class="short-description">Just a little late night lullably featuring our synth friends with all the cables sticking out of them.</p><hr>
+            <button id="synth-button-2" class="expand-buttons">Read more</button>
+            <p id="synth-expand-2" class="expansions"></p>
+          </div>
         </div>
         <div class="grid-video">
           <video width="384" height="288" controls class="video">
             <source src="Video/ParkBird.mp4" type="video/mp4">
               Your browser does not support the video tag :(
           </video>
-          <p>Here we have another example of oscillators run through VCAs with short, plucky envelopes.  This techinque can make simple waveforms more interesting and it can also tame more complex waveforms into something pleasant and percussive as evidenced by the sound that's almost reminiscient of a gentle beating of a bongo drum.  Also, there's a bird that obstructed my view as I was just trying to film the sun while sitting in Dolores Park, as one does.</p>
+          <div class="descriptions">
+            <p class="short-description">Another example of simple, delicate, percussive tones achieved through modular synthesizers.</p><hr>
+            <button id="synth-button-3" class="expand-buttons">Read more</button>
+            <p id="synth-expand-3" class="expansions"></p>
+          </div>
         </div>
         <div class="grid-video">
           <video width="384" height="288" controls class="video">
             <source src="Video/PlayDate.mp4" type="video/mp4">
               Your browser does not support the video tag :(
           </video>
-          <p>There's a bit more to unpack here but the layers involved are the nice, rich lead sound from the Moog Grandmother, another simple melodic voice from the Make Noise 0-Coast, and the more complex, rhythmic whirling sound from the eurorack skiff whose primary sound source is a Make Noise Dual Primary Oscillator (DPO).  The goal here is to create sound layers that are very distinct and can then coexist and still be heard when mixed together.  Of course layers of synthesizers coexisting tastefully is extremly subjective.</p>
+          <div class="descriptions">
+            <p class="short-description">The goal here is to create sound layers that are very distinct and can then coexist
+            and still be heard when mixed together.  Of course layers of synthesizers coexisting
+            tastefully is extremly subjective.</p><hr>
+            <button id="synth-button-4" class="expand-buttons">Read more</button>
+            <p id="synth-expand-4" class="expansions"></p>
+          </div>
         </div>
       </div>
     </div>
+  <script src="app.js"></script>
   </body>
 </html>
